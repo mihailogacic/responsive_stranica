@@ -1,0 +1,1346 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Oswald:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+* a:visited{
+    color: black;   
+}
+.kobasica_reklama{
+    padding: 20px 0;
+    height: 11vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+}
+.pozadina_clanka{
+    background-size: cover;
+    background-position: center;
+}
+.nestajuci_div{
+    display: none;
+    height:30%;
+    width: 25%;
+    position: relative;
+    top: 38%;
+    left:40%;
+}
+.nestajuci_gore{
+    background-color: grey;
+    height: 50%;
+    font-size: 180%;
+    border-radius: 5px;
+    text-align: center;
+}
+.nestajuci_div a{
+    text-decoration: none;
+    color: white;
+}
+.nestajuci_gore:hover{
+    transition: 0.5s;
+}
+.potamni_kada_hoverujes{
+    display: flex;
+}
+.potamni_kada_hoverujes:hover .nestajuci_div{
+    display: block;
+    transition: 0.5s;
+}
+.potamni_kada_hoverujes:hover{
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+.nestajuci_dole{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0.5em;
+}
+.nestajuca_mreza{
+    width: 32%;
+    height: 50%;
+    font-size: 200%;
+    padding: 0.3em;
+}
+.nestajuci_dole a{
+    background-color: #00aeef;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 73px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.logo_sajta{
+    width: 15%;
+    background-color: white;
+}
+.logo_sajta a img{
+    height: 64px;
+    width:auto;
+    margin: 0 0.5px;
+    padding-left: 20px;
+}
+.desni_header{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    background-color: white;
+    padding-right: 20px;
+}
+.glavni_meni{
+    width: 116vh;
+    overflow: hidden;
+}
+.glavni_meni ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.glavni_meni ul li{
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 24px 20px;
+}
+.glavni_meni ul li:hover{
+    border-bottom:solid lightskyblue thick;
+    transition: 0.1s;
+}
+.glavni_meni ul li a{
+    text-decoration: none;
+}
+.dropdown_meni{
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    min-width: 25vh;
+    margin-top: 30px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: 0.8em;
+}
+.dropdown_meni a{
+    display: block;
+    padding: 10px 20px;
+}
+.dropdown_meni a:visited{
+    color: white;   
+}
+.dropdown_meni a:hover{
+    background-color: #333333;
+}
+.glavni_meni ul li:hover .dropdown_meni{
+    display: block;
+}
+.glavni_meni h1{
+    
+    color:rgb(65, 65, 255);
+    font-weight: 900;
+}
+.nestani_ime_stranice{
+    display: none;
+}
+.desni_deo_desnog_headera{
+    display: flex;
+    width: 20vh;
+}
+.drustvene_mreze{
+    width: 50%;
+    padding: 0px 10px;
+}
+.drustvene_mreze ul{
+    display: flex;
+    list-style: none;
+}
+.drustvene_mreze ul li{
+    padding: 21px 6px;
+    font-size: 20px;
+}
+.drustvene_mreze:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.pretraga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    color: black;
+}
+.pretraga i{
+    font-size: 20px;
+    padding:5px;
+}
+.pretraga:hover{
+    background-color: black;
+    color: white; 
+    transition: 0.5s;  
+}
+.body{
+    display: flex;
+    border: 20px solid #c8c8c8;
+    border-top: 93px solid #c8c8c8;
+    border-bottom: 0;
+}
+.levi_main{
+    width: 80%;
+}
+.levi_main0{
+    background-image: url("../projekat/images_drugi_projekat/levi_main0.jpg");
+    border-bottom: 1px solid #ddd;
+}
+.levi_main1{
+    display: flex;
+    height: 36.2vh;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ddd;
+}
+.veliki_levo{
+    width: 50%;
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+}
+.cetiri_mala_desno{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 8px;
+}
+.mali_desno1{
+    width: 50%;
+    height: 50%;
+    background-image: url("../projekat/images_drugi_projekat/druga_pozadina.jpg");
+}
+.mali_desno2{
+    width: 50%;
+    height: 50%;
+    background-image: url("../projekat/images_drugi_projekat/treca_pozadina.jpg");
+}
+.mali_desno3{
+    width: 50%;
+    height: 50%;
+    background-image: url("../projekat/images_drugi_projekat/cetvrta_pozadina.jpg");
+}
+.mali_desno4{
+    width: 50%;
+    height: 50%;
+    background-image: url("../projekat/images_drugi_projekat/peta_pozadina.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.levi_main2{
+    padding:20px 25px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+.levi_main2 ul{
+    list-style: none;
+}
+.levi_main2 ul li{
+    display: inline;
+}
+#prvi{
+    color: #00aeef;
+    font-size: 17px;
+    
+}
+#drugi{
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 100;
+    
+}
+.levi_main3{
+    background-image: url("../projekat/images_drugi_projekat/levi_main3.jpg");
+    border-bottom: 1px solid #ddd;
+}
+.levi_main4{
+    
+    padding: 20px 25px;
+    border-bottom: 1px solid #ddd;
+}
+.neki_tekst{
+    height: 2.5%;
+    display: flex;
+    padding-bottom: 20px;
+}
+.skroz_levo{
+    color: #444444;
+    font-size: 16px;
+    display: inline-flex;
+}
+.skroz_desno{
+    color: #444444;
+    font-size: 16px;
+    display: inline-flex;
+    float: right;
+}
+.vesti{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.vesti2{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.vest_cetvrtina, .vest_cetvrtina2{
+    width: 23%;
+    height: 45vh;
+    overflow: hidden;
+
+}
+.slika_clanka2{
+    font-size: 7px;
+    height: 50%;
+    margin: 20px 0px;
+    background-image: url("../projekat/images_drugi_projekat/sesta_pozadina.jpg");
+}
+.slika_clanka{
+    font-size: 7px;
+    height: 50%;
+    margin: 20px 0px;
+    background-image: url("../projekat/images_drugi_projekat/mali_desno1.jpg");
+}
+.slika_clanka .nestajuci_gore{
+    height: 40%;
+}
+.tekst_clanka p:hover{
+    color: red;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.footer_clanka{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.levi_main5,.levi_main8{
+    height: 36.2vh;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ddd;
+}
+.proba{
+    display: flex;
+    height: 90%;
+    padding-top: 20px;
+}
+.levi_main6, .levi_main7{
+    padding: 20px 25px;
+    border-bottom: 1px solid #ddd;
+}
+.levi_main9{
+    padding: 20px 25px;
+}
+.stranice{
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    color: white;
+}
+.stranice div{
+    display: flex;
+    background-color:#444444;
+    padding: 0.4em 0.8em;
+    margin:auto 0.5em 0.2em;
+    height: 50%;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10em;
+}
+.stranice div:hover{
+    background-color: #c8c8c8;
+    transition: 0.3s;
+}
+.desni_main{
+    background-color: #eeeeee;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.reklama{
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+.reklama img{
+    margin:0 5%;
+    width: 90%;
+}
+.vesti_desno1{
+    border-top: 1px solid #c8c8c8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 65vh;
+}
+.pet{
+    width: auto;
+    height: 15%;
+    overflow: hidden;
+}
+.tri{
+    height: 30%;
+}
+.cetiri{
+    height: 22%;
+}
+.vest{
+    padding: 10px 15px;
+    border-bottom: 1px solid #c8c8c8;
+    display: inline-flex;
+    align-items: center;
+}
+.slika_vesti{
+    width: 35%;
+}
+.slika_vesti img{
+    width: 100%;
+    height: auto;
+}
+.tekst_vesti{
+    padding-left: 15px;
+    width: 60%;
+    font-size: 0.7em;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    font-stretch: expanded;
+    justify-content: space-around;
+}
+.vest:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.vest .tekst_vesti p:hover{
+    color: red;
+    transition: 0.5s;
+}
+.oglasavanje{
+    background-color: black;
+    color: white;
+    padding: 1em;
+    font-weight: 900;
+    font-size: 17px;
+    width: auto;
+}
+.vesti_desno2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 39vh;
+}
+.footer_pozadina{
+    display: flex;
+    background-color: #c8c8c8;
+}
+.footer{
+    width: 78.2%;
+    display: flex;
+    align-self: auto;
+    margin-left: 2.3vh;
+    background-color: #555555;
+    padding: 10vh 0 6vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer_levo, .footer_centar, .footer_desno{
+    width: 30%;
+    align-self: auto;
+    background-color: transparent;
+    color:#c8c8c8;
+}
+.footer_levo p, .footer_desno p{
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+.naslov{
+    font-weight: 900;
+}
+.footer_centar .naslov{
+    margin-bottom:25px ;
+}
+.footer_centar ul{
+    list-style: none;
+}
+.footer_centar ul{
+    font-size: 15px;
+}
+.footer_centar ul li a{
+    text-decoration: none;
+    color: rgb(49, 49, 169);
+}
+.footer_centar ul li a:hover{
+    color: red;
+    transition: 0.1s;
+}
+.footer_dole_pozadina{
+    display: flex;
+    height: 5vh;
+    background-color: #c8c8c8;
+}
+.footer_dole{
+    width: 78.2%;
+    background-color: #444444;
+    margin-left: 2.3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_dole div{
+    padding: 0 20px;
+    color: gray;
+}
+.footer2{
+    width:97.65%;
+}
+.nabacani_linkovi{
+    height: 49vh;
+    padding: 1em 0.5em;
+    font-size: 1.3em;
+    border-bottom: 1px solid #c8c8c8;
+}
+.nabacani_linkovi a{
+    text-decoration: none;
+    color: rgba(0, 0, 119, 0.863);
+}
+.nabacani_linkovi a:hover{
+    color: red;
+}
+.manji_font{
+    height: 44vh;
+    font-size: 0.95em;
+}
+.body3{
+    border: 60px solid #c8c8c8;
+    border-top: 93px solid #c8c8c8;
+    border-bottom: none;
+}
+.padding_za_clanak{
+    padding: 2em;
+    width: 77%;
+    padding-top: 0;
+}
+.smanji_font_paragrafa{
+    font-size: 2.5em;
+    font-weight: 900;
+    padding-top: 0.75em;
+    padding-left: 0.75em;
+}
+.desni_main_clanak{
+    width: 23%;
+}
+.oglasavanje_manji_font{
+    font-size: 0.85em;
+}
+.newseller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.1em;
+    border-bottom: 1px solid #c8c8c8;
+    overflow: hidden;
+}
+.vesti_desno1_3_stranica{
+    height: 52vh;
+}
+.clanak_levo{
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-right: 3%;
+}
+.clanak_levo1{
+    text-align: center;
+    border-bottom: 1px solid #c8c8c8;
+}
+.clanak_levo1 p{
+    padding: 0.5em 0;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: grey;
+}
+.clanak_levo11{
+    font-size: 0.8em;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1%;
+    height: 0.85em;
+    width: 100%;
+    padding: 0.4em 0;
+    background-color: #00aeef;
+}
+.clanak_levo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    border-bottom: 1px solid #c8c8c8;
+}
+.clanak_levo2 img{
+    width:100%;
+    height: auto;
+}
+.clanak_levo2 a{
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 900;
+}
+.clanak_levo2 a:hover{
+    color:red;
+}
+.clanak_levo3{
+    padding-top: 2em;
+}
+.clanak_levo3 ul{
+    list-style: none;
+}
+.clanak_levo3 ul li{
+    
+    color: white;
+    padding: 0.25em 0.5em; 
+    display: inline-flex;
+    background-color: #555555;
+    font-size: 0.7em;
+    border-bottom: solid white 1px;
+    border-radius: 5px;
+}
+.hoverable:hover{
+    background-color: red;
+}
+.clanak_desno{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.clanak_desno1{
+    height: 50vh;
+    width: 100%;
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+}
+.druga_pozadina{
+    background-image: url("../projekat/images_drugi_projekat/druga_pozadina.jpg");
+}
+.treca_pozadina{
+    background-image: url("../projekat/images_drugi_projekat/treca_pozadina.jpg");
+}
+.cetvrta_pozadina{
+    background-image: url("../projekat/images_drugi_projekat/cetvrta_pozadina.jpg");
+}
+.peta_pozadina{
+    background-image: url("../projekat/images_drugi_projekat/peta_pozadina.jpg");
+}
+.sesta_pozadina{
+    background-image: url("../projekat/images_drugi_projekat/sesta_pozadina.jpg");
+}
+.main_clanka{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+.clanak_desno2{
+    padding: 0.7em 0;
+    font-size: 2em;
+}
+.clanak_desno2 a:hover{
+    color: grey;
+}
+.naslov_clanka{
+    
+    font-size: 1em;
+    font-weight: 900;
+}
+.tekst_clanka{
+    
+    font-weight: 400;
+}
+.clanak_desno33{
+    
+    align-self: center;
+    text-decoration: none;
+    width: 60%;
+}
+.clanak_desno3{
+    text-align: center;
+    width: 100%;
+    height: 1,5em;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    background-color: #00aeef;
+}
+.radi{
+
+    font-weight: 700;
+    
+    padding: 0.5em 1em;
+    margin-top: 3em;
+}
+.clanci_dole{
+    padding-top: 0.1em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.div_trecina{
+    font-size: 0.6em;
+    width:33%;
+    height: 20vh;
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+}
+.footer3{
+    width: auto;
+    margin-left: 0;
+}
+.footer_dole2{
+    width: auto;
+    margin-left: 0;
+}
+.pozadina_bodija{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #c8c8c8;
+}
+.body4{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-top: 93px solid#c8c8c8;
+    border-bottom: 20px solid #c8c8c8;
+}
+.forma{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    border-bottom:solid #c8c8c8 2px;
+}
+.mapa{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.forma_levo, .forma_desno, .mapa_levo, .mapa_desno{
+    height: 87.2%;
+    margin: 2%;
+    width: 50%;
+}
+.forma_levo{
+    font-size: 5em;
+    font-weight: 900;
+    text-align: center;
+    color: #c8c8c8;
+}
+.forma_desno{
+    padding: 0 2em;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: #c8c8c8;
+    font-size: 1.5em;
+    color: white;
+    
+    font-weight: 600;
+    align-items: center;
+}
+.forma_desno p{
+    padding: 0.5em 0;
+}
+.mapa_levo{
+    display: flex;
+    justify-content: center;
+}
+.mapa_desno{
+    font-size: 5em;
+    font-weight: 900;
+    text-align: center;
+    color: #c8c8c8;
+}
+.desni_main_novi_dizajn{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 20vh;
+    gap: 1em;
+    padding: 0 1em;
+}
+.razdvoji{
+    justify-content: space-around;
+}
+.slika, .slika2{
+    font-size: 0.5em;
+    height: 70%;
+    width: auto;
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+}
+.tekst{
+    height: 30%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tekst p{
+    font-size: 0.8em;
+    width: 100%;
+    height: 40%;
+    padding-top: 5%;
+}
+.tekst p b:hover, .glavni_div_desno p b:hover, .div_levo_tekst p b:hover, .div_desno_tekst p b:hover, .ogromni_tekst p b:hover{
+    transition:0.5s;
+    color: red;
+}
+.glavni_div{
+    height: 25%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: #262626;
+    border-radius: 1px;
+    margin: 1em;
+    color: lightgrey;
+}
+.glavni_div_levo, .glavni_div_desno{
+    height: 82%;
+    margin: 5%;
+}
+.glavni_div_levo{
+    font-size: 1em;
+    width: 60%;
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+}
+.glavni_div_desno{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size:1.57em;
+    width: 35%;
+    text-align: right;
+    overflow: hidden;
+}
+.sporedni_div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 36%;
+}
+.div_levo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 45%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.div_levo_vesti{
+    height: 50vh;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+
+}
+.div_levo_slika{
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+    height: 100%;
+    width:50%;
+}
+.div_levo_tekst{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2%;
+    height: 100%;
+    width: 50%;
+}
+.div_levo_tekst p:last-child{
+    overflow: hidden;
+}
+.div_desno{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 45%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.div_desno_vest{
+    background-color: #c8c8c8;
+    padding: 2%;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.div_desno_slika{
+    width: 100%;
+    height: 60%;
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+}
+.div_desno_tekst{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    font-size: 0.7em;
+    overflow: hidden;
+}
+.body6{
+    border: 20px solid #c8c8c8;
+    border-top: 93px solid #c8c8c8;
+    border-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.sest_levo{
+    width: 25%;
+    background-color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 0;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+.sest_centar{
+    height: 90%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.ogromna_vest{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.ogromna_slika{
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+}
+.ogromni_tekst{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    font-size: 0.8em;
+}
+.ogromni_tekst p b{
+    font-size: 1.57em;
+}
+.sest_desno{
+    padding: 1em 0;
+    background-color: #ddd;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.sest_desno_vest{
+    width: 45%;
+    height:25vh;
+    background-image: url("../projekat/images_drugi_projekat/clanak_desno1.jpg");
+    gap: 1em;
+    margin: 1em auto;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    align-items: flex-end;
+}
+.sest_desno_vest:hover{
+ color: rgba(240, 248, 255, 0);
+ transition: 0.5s;
+}
+.dugme_za_meni{
+    display: none;
+    margin: auto;
+    font-size: 3.5em;
+    position: fixed;
+}
+#dugme_za_meni {
+    display: none;
+}
+.glavni_meni2{
+    display: none;
+    width: 350%;
+    height: 100vh;
+    background-color:#262626;
+    font-size: 0.5em;
+}
+.glavni_meni2 ul li a{
+    color: lightgrey;
+    text-decoration: none;
+    font-weight: 900;
+}
+.glavni_meni2 ul li{
+    text-align: left;
+    list-style: none;
+    padding: 1em;
+}
+.glavni_meni2 ul h1{
+    color: #00aeef;
+    text-align: center;
+    padding-top: 1em;
+}
+#dugme_za_meni:checked + label > .glavni_meni2{
+    display: flex;
+}
+.sest_levo .oglasavanje{
+    height: 2em;
+    width: 100%;
+}
+@media screen and (max-width:1200px)
+{
+    .div_trecina{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1040px)
+{
+    .levi_main1, .proba{
+        /* staviti na kolone */
+        flex-direction: column;
+    }
+    .veliki_levo, .cetiri_mala_desno{
+        /* sirina na 100 a visina na 50 */
+        width: 100%;
+        height: 50%;
+    }
+    .vest_cetvrtina, .vest_cetvrtina2{
+        /* sirina na 50 */
+        width: 45%;
+    }
+    .footer_levo, .footer_centar, .footer_desno{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width:1000px)
+{
+    .desni_main{
+        display: none;
+    }
+    .levi_main{
+        width: 100%;
+    }
+    .levi_main1, .proba{
+        flex-direction: row;
+    }
+    .veliki_levo, .cetiri_mala_desno{
+        width: 50%;
+        height: 100%;
+    }
+    .vest_cetvrtina, .vest_cetvrtina2{
+        width:23%;
+    }
+    .footer,.footer_dole{
+        width:100%;
+        margin-right: 20px;
+    }
+    .desni_header{
+        visibility:hidden;
+    }
+    .logo_sajta{
+        display: none;
+    }
+    .header{
+        background-color: white;
+    }
+    .dugme_za_meni{
+        display: block;
+    }
+    .div_trecina{
+        width: 33%;
+    }
+    .forma_levo, .mapa_desno{
+        font-size:4em ;
+    }
+    .forma{
+        align-items: center;
+        flex-direction: column;
+    }
+    .mapa{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .sest_levo{
+        display: none;
+    }
+    .sest_desno{
+        width: 40%;
+    }
+    .ogromna_slika{
+        height: 60vh;
+    }
+}
+@media screen and (max-width:790px)
+{
+    .levi_main1, .proba{
+        /* staviti na kolone */
+        flex-direction: column;
+    }
+    .veliki_levo, .cetiri_mala_desno{
+        /* sirina na 100 a visina na 50 */
+        width: 100%;
+        height: 50%;
+    }
+    .veliki_levo .nestajuci_dole{
+        height: 5vh;
+    }
+    .mali_desno1 .nestajuci_dole, .mali_desno2 .nestajuci_dole, .mali_desno3 .nestajuci_dole, .mali_desno4 .nestajuci_dole{
+        height: 3vh;
+    }
+    .vest_cetvrtina, .vest_cetvrtina2{
+        /* sirina na 50 */
+        width: 45%;
+    }
+    .footer_levo, .footer_centar, .footer_desno{
+        width: 40%;
+    }
+    .div_trecina{
+        width: 50%;
+    }
+    .forma_levo, .mapa_desno{
+        font-size:3em;
+    }
+    .div_levo_vesti{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .div_levo_slika{
+        width: 100%;
+        height: 50%;
+    }
+    .div_levo_tekst{
+        width: 100%;
+        height: 45%;
+    }
+    .body6{
+        flex-direction: column;
+    }
+    .sest_centar{
+        width: 95%;
+        margin:1em auto;
+    }
+    .sest_desno{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .sest_desno_vest{
+        width: 23%;
+    }
+    .ogromna_slika{
+        height: 45vh;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .vest_cetvrtina, .vest_cetvrtina2{
+        /* sirina na 50 */
+        width: 100%;
+    }
+    .skroz_desno{
+        display: none;
+    }
+    .veliki_levo{
+        height: 20%;
+        width: 100%;
+        font-size: 0.4em;
+    }
+    .cetiri_mala_desno{
+        height: 80%;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: nowrap;
+        font-size: 0.4em;
+    }
+    .mali_desno1, .mali_desno2, .mali_desno3, .mali_desno4{
+        width: 100%;
+        height: 20%;
+    }
+    .footer_levo, .footer_centar, .footer_desno{
+        width: 100%;
+        margin: 2em;
+    }
+    .clanak_levo2{
+        font-size: 0.6em;
+    }
+    .glavni_div{
+        flex-direction: column;
+    }
+    .glavni_div_levo{
+        width: 90%;
+        height: 40vh;
+    }
+    .glavni_div_desno{
+        width: 90%;
+        height: 30%;
+        text-align: center;
+        font-size: 2em;
+    }
+    .glavni_div_desno p:last-child{
+        display: none;
+    }
+    .div_desno_vest{
+        width: 100%;
+        height: 20%;
+    }
+    .div_desno_tekst p:last-child{
+        display: none;
+    }
+    .sest_desno_vest{
+        width: 30%;
+        height: 20vh;
+    }
+    .ogromna_slika{
+        height: 40vh;
+    }
+}
+@media screen and (max-width:490px)
+{
+    .skroz_desno, .skroz_levo{
+        font-size: 0.9em;
+    }
+    .vesti, .vesti2{
+        flex-direction: column;
+    }
+    .veliki_levo .nestajuci_dole, .mali_desno1 .nestajuci_dole, .mali_desno2 .nestajuci_dole, .mali_desno3 .nestajuci_dole, .mali_desno4 .nestajuci_dole{
+        height: 2vh;
+    }
+    .vest_cetvrtina{
+        /* sirina na 50 */
+        width: 100%;
+        height: 6vh;
+        border-bottom: #ddd solid thin;
+    }
+    .vest_cetvrtina2{
+        width: 100%;
+        border-bottom:#ddd solid thin;
+        height: 20vh;
+    }
+    .slika_clanka, .tekst_clanka h6, .footer_clanka{
+        display: none;
+    }
+    .slika_clanka2 .nestajuci_dole{
+        height: 2.5vh;
+    }
+    .body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .body4{
+        flex-direction: column;
+    }
+    .body2{
+        flex-direction: none;
+    }
+    .desni_main{
+        display: flex;
+        width: 100%;
+    }
+    .desni_main2{
+        display: flex;
+        width: 100%;
+    }
+    .desni_main_clanak{
+        display: none;
+    }
+    .div_trecina{
+        width: 100%;
+    }
+    .desni_main_novi_dizajn{
+        height: 9vh;
+    }
+    .sta_god{
+        height: 20vh;
+        flex-direction: row;
+    }
+    .sta_god2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    } 
+    .slika2{
+        width: 50%;
+        height: 100%;
+    }
+    .slika{
+        display: none;
+    }
+    .tekst p:last-child{
+        display: none;
+    }
+    .sporedni_div{
+        flex-direction: column;
+    }
+    .div_levo, .div_desno{
+        width: 100%;
+    }
+    .div_desno_vest{
+        border:#555555 solid 1em;
+        border-radius: 40%;
+        margin:0.5em;
+    }
+    .div_levo_vesti{
+        margin: 1em auto;
+    }
+    .ogromna_slika{
+        height: 18vh;
+    }
+    .sest_levo{
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+    }
+    .sest_desno{
+        flex-direction: column;
+    }
+    .sest_desno_vest{
+        width: 95%;
+        height: 10vh;
+        margin: 0.5em auto;
+    }
+}
+
+
